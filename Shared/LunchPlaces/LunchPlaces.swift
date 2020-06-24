@@ -7,37 +7,8 @@
 
 import SwiftUI
 
-struct LunchCellView: View {
-    var lunchPlace: LunchPlace
-    
-    var body: some View {
-        NavigationLink(destination: LunchPlaceDetail(lunchPlace: lunchPlace)) {
-            Image(systemName: "pencil")
-                .resizable()
-                .frame(width: 50, height: 50)
-                .background(Color.purple)
-                .cornerRadius(8)
-            
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(lunchPlace.name)
-                        .font(.headline)
-                        .foregroundColor(.primary)
-                    Text("Distance to place")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
-                
-                Spacer()
-                
-                
-            }
-        }
-    }
-}
-
-struct LunchPlacesList: View {
-    @ObservedObject var store: LunchPlaceStore
+struct LunchPlaces: View {
+    @EnvironmentObject private var store: LunchPlaceStore
     
     var body: some View {
         List() {
@@ -59,9 +30,17 @@ struct LunchPlacesList: View {
         .navigationTitle("Lunch Places")
         .toolbar {
             #if os(iOS)
-            EditButton()
+            ToolbarItem(placement: .navigationBarLeading) {
+                EditButton()
+            }
             #endif
-            Button("Add", action: addLunchPlace)
+            
+            ToolbarItem(placement: .primaryAction) {
+                Button(action: addLunchPlace){
+                    Label("Add", systemImage: "plus")
+                        .labelStyle(IconOnlyLabelStyle())
+                }
+            }
         }
     }
     
@@ -86,6 +65,8 @@ struct LunchPlacesList: View {
 
 struct LunchPlacesList_Previews: PreviewProvider {
     static var previews: some View {
-        LunchPlacesList(store: testStore)
+        NavigationView {
+            LunchPlaces()
+        }
     }
 }

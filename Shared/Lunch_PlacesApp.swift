@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct Lunch_PlacesApp: App {
-    @StateObject var store = LunchPlaceStore()
+    @StateObject var store = testStore
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(store)
         }
     }
 }

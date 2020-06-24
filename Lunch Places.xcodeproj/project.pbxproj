@@ -21,14 +21,16 @@
 		A20E103524A39C410029D429 /* LunchPlaceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103324A39C410029D429 /* LunchPlaceStore.swift */; };
 		A20E103724A39C7D0029D429 /* LunchPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103624A39C7D0029D429 /* LunchPlace.swift */; };
 		A20E103824A39C7D0029D429 /* LunchPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103624A39C7D0029D429 /* LunchPlace.swift */; };
-		A219CE0024A3D2C100A10F98 /* LunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CDFF24A3D2C100A10F98 /* LunchPlacesList.swift */; };
-		A219CE0124A3D2C100A10F98 /* LunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CDFF24A3D2C100A10F98 /* LunchPlacesList.swift */; };
+		A219CE0024A3D2C100A10F98 /* LunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CDFF24A3D2C100A10F98 /* LunchPlaces.swift */; };
+		A219CE0124A3D2C100A10F98 /* LunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CDFF24A3D2C100A10F98 /* LunchPlaces.swift */; };
 		A219CE0724A3D3C900A10F98 /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CE0624A3D3C900A10F98 /* AppSidebarNavigation.swift */; };
 		A219CE0824A3D3C900A10F98 /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CE0624A3D3C900A10F98 /* AppSidebarNavigation.swift */; };
 		A219CE0A24A3D40000A10F98 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CE0924A3D40000A10F98 /* AppTabNavigation.swift */; };
 		A219CE0B24A3D40000A10F98 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CE0924A3D40000A10F98 /* AppTabNavigation.swift */; };
-		A2C9198424A3D91100860D78 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* Favorites.swift */; };
-		A2C9198524A3D91100860D78 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* Favorites.swift */; };
+		A2C9198424A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
+		A2C9198524A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
+		A2C9198824A3E37B00860D78 /* LunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198724A3E37B00860D78 /* LunchPlacesList.swift */; };
+		A2C9198924A3E37B00860D78 /* LunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198724A3E37B00860D78 /* LunchPlacesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +68,11 @@
 		A20E103024A38D600029D429 /* LunchPlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceDetail.swift; sourceTree = "<group>"; };
 		A20E103324A39C410029D429 /* LunchPlaceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceStore.swift; sourceTree = "<group>"; };
 		A20E103624A39C7D0029D429 /* LunchPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlace.swift; sourceTree = "<group>"; };
-		A219CDFF24A3D2C100A10F98 /* LunchPlacesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlacesList.swift; sourceTree = "<group>"; };
+		A219CDFF24A3D2C100A10F98 /* LunchPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaces.swift; sourceTree = "<group>"; };
 		A219CE0624A3D3C900A10F98 /* AppSidebarNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSidebarNavigation.swift; sourceTree = "<group>"; };
 		A219CE0924A3D40000A10F98 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
-		A2C9198324A3D91100860D78 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLunchPlaces.swift; sourceTree = "<group>"; };
+		A2C9198724A3E37B00860D78 /* LunchPlacesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlacesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				A20E0FF324A386A10029D429 /* Lunch_PlacesApp.swift */,
-				A219CDFF24A3D2C100A10F98 /* LunchPlacesList.swift */,
-				A20E103024A38D600029D429 /* LunchPlaceDetail.swift */,
+				A2C9198624A3DAE400860D78 /* LunchPlaces */,
 				A20E0FF524A386A20029D429 /* Assets.xcassets */,
 				A219CE0224A3D36900A10F98 /* Model */,
 				A219CE0C24A3D4EE00A10F98 /* Navigation */,
-				A2C9198324A3D91100860D78 /* Favorites.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -193,6 +194,17 @@
 				A219CE0624A3D3C900A10F98 /* AppSidebarNavigation.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A2C9198624A3DAE400860D78 /* LunchPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				A219CDFF24A3D2C100A10F98 /* LunchPlaces.swift */,
+				A20E103024A38D600029D429 /* LunchPlaceDetail.swift */,
+				A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */,
+				A2C9198724A3E37B00860D78 /* LunchPlacesList.swift */,
+			);
+			path = LunchPlaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,14 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2C9198424A3D91100860D78 /* Favorites.swift in Sources */,
+				A2C9198424A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */,
 				A219CE0724A3D3C900A10F98 /* AppSidebarNavigation.swift in Sources */,
 				A219CE0A24A3D40000A10F98 /* AppTabNavigation.swift in Sources */,
-				A219CE0024A3D2C100A10F98 /* LunchPlacesList.swift in Sources */,
+				A219CE0024A3D2C100A10F98 /* LunchPlaces.swift in Sources */,
 				A20E103424A39C410029D429 /* LunchPlaceStore.swift in Sources */,
 				A20E103724A39C7D0029D429 /* LunchPlace.swift in Sources */,
 				A20E103124A38D600029D429 /* LunchPlaceDetail.swift in Sources */,
 				A20E101E24A386A20029D429 /* ContentView.swift in Sources */,
+				A2C9198824A3E37B00860D78 /* LunchPlacesList.swift in Sources */,
 				A20E101C24A386A20029D429 /* Lunch_PlacesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,14 +381,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2C9198524A3D91100860D78 /* Favorites.swift in Sources */,
+				A2C9198524A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */,
 				A219CE0824A3D3C900A10F98 /* AppSidebarNavigation.swift in Sources */,
 				A219CE0B24A3D40000A10F98 /* AppTabNavigation.swift in Sources */,
-				A219CE0124A3D2C100A10F98 /* LunchPlacesList.swift in Sources */,
+				A219CE0124A3D2C100A10F98 /* LunchPlaces.swift in Sources */,
 				A20E103524A39C410029D429 /* LunchPlaceStore.swift in Sources */,
 				A20E103824A39C7D0029D429 /* LunchPlace.swift in Sources */,
 				A20E103224A38D600029D429 /* LunchPlaceDetail.swift in Sources */,
 				A20E101F24A386A20029D429 /* ContentView.swift in Sources */,
+				A2C9198924A3E37B00860D78 /* LunchPlacesList.swift in Sources */,
 				A20E101D24A386A20029D429 /* Lunch_PlacesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
