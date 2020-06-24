@@ -15,6 +15,12 @@
 		A20E101F24A386A20029D429 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E0FF424A386A10029D429 /* ContentView.swift */; };
 		A20E102024A386A20029D429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20E0FF524A386A20029D429 /* Assets.xcassets */; };
 		A20E102124A386A20029D429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20E0FF524A386A20029D429 /* Assets.xcassets */; };
+		A20E103124A38D600029D429 /* LunchPlaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103024A38D600029D429 /* LunchPlaceDetail.swift */; };
+		A20E103224A38D600029D429 /* LunchPlaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103024A38D600029D429 /* LunchPlaceDetail.swift */; };
+		A20E103424A39C410029D429 /* LunchPlaceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103324A39C410029D429 /* LunchPlaceStore.swift */; };
+		A20E103524A39C410029D429 /* LunchPlaceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103324A39C410029D429 /* LunchPlaceStore.swift */; };
+		A20E103724A39C7D0029D429 /* LunchPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103624A39C7D0029D429 /* LunchPlace.swift */; };
+		A20E103824A39C7D0029D429 /* LunchPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103624A39C7D0029D429 /* LunchPlace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,9 @@
 		A20E101524A386A20029D429 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20E101924A386A20029D429 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		A20E101B24A386A20029D429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20E103024A38D600029D429 /* LunchPlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceDetail.swift; sourceTree = "<group>"; };
+		A20E103324A39C410029D429 /* LunchPlaceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceStore.swift; sourceTree = "<group>"; };
+		A20E103624A39C7D0029D429 /* LunchPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +109,10 @@
 			children = (
 				A20E0FF324A386A10029D429 /* Lunch_PlacesApp.swift */,
 				A20E0FF424A386A10029D429 /* ContentView.swift */,
+				A20E103024A38D600029D429 /* LunchPlaceDetail.swift */,
 				A20E0FF524A386A20029D429 /* Assets.xcassets */,
+				A20E103324A39C410029D429 /* LunchPlaceStore.swift */,
+				A20E103624A39C7D0029D429 /* LunchPlace.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -308,6 +320,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20E103424A39C410029D429 /* LunchPlaceStore.swift in Sources */,
+				A20E103724A39C7D0029D429 /* LunchPlace.swift in Sources */,
+				A20E103124A38D600029D429 /* LunchPlaceDetail.swift in Sources */,
 				A20E101E24A386A20029D429 /* ContentView.swift in Sources */,
 				A20E101C24A386A20029D429 /* Lunch_PlacesApp.swift in Sources */,
 			);
@@ -317,6 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20E103524A39C410029D429 /* LunchPlaceStore.swift in Sources */,
+				A20E103824A39C7D0029D429 /* LunchPlace.swift in Sources */,
+				A20E103224A38D600029D429 /* LunchPlaceDetail.swift in Sources */,
 				A20E101F24A386A20029D429 /* ContentView.swift in Sources */,
 				A20E101D24A386A20029D429 /* Lunch_PlacesApp.swift in Sources */,
 			);

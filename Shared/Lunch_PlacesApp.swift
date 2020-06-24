@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Lunch_PlacesApp: App {
+    @StateObject var store = LunchPlaceStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: store)
         }
     }
 }
