@@ -64,7 +64,6 @@ struct LunchPlaceRow: View {
             
             Spacer(minLength: 0)
         }
-        .font(.subheadline)
         .padding(.vertical, verticalRowPadding)
     }
 }

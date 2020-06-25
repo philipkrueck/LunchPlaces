@@ -42,6 +42,11 @@
 		A299D3DB24A5061C00BE7BB7 /* LunchPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103624A39C7D0029D429 /* LunchPlace.swift */; };
 		A299D3DC24A5062400BE7BB7 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9199024A4782F00860D78 /* ImageStore.swift */; };
 		A299D3DD24A506FB00BE7BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20E0FF524A386A20029D429 /* Assets.xcassets */; };
+		A299D3DF24A518F600BE7BB7 /* WatchLunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299D3DE24A518F600BE7BB7 /* WatchLunchPlacesList.swift */; };
+		A299D3E024A51A6E00BE7BB7 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199424A4789500860D78 /* chilkoottrail.jpg */; };
+		A299D3E124A51A6E00BE7BB7 /* stmarylake_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199724A4789500860D78 /* stmarylake_feature.jpg */; };
+		A299D3E224A51A6E00BE7BB7 /* charleyrivers_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */; };
+		A299D3E324A51A6E00BE7BB7 /* turtlerock_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199524A4789500860D78 /* turtlerock_feature.jpg */; };
 		A2C9198424A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
 		A2C9198524A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
 		A2C9198824A3E37B00860D78 /* LunchPlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198724A3E37B00860D78 /* LunchPlaceRow.swift */; };
@@ -151,6 +156,7 @@
 		A299D3CB24A505A700BE7BB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A299D3CD24A505A700BE7BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A299D3CE24A505A700BE7BB7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A299D3DE24A518F600BE7BB7 /* WatchLunchPlacesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLunchPlacesList.swift; sourceTree = "<group>"; };
 		A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLunchPlaces.swift; sourceTree = "<group>"; };
 		A2C9198724A3E37B00860D78 /* LunchPlaceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceRow.swift; sourceTree = "<group>"; };
 		A2C9198A24A3F8C800860D78 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
@@ -314,6 +320,7 @@
 			children = (
 				A299D3C024A505A700BE7BB7 /* Lunch_PlacesApp.swift */,
 				A299D3C224A505A700BE7BB7 /* ContentView.swift */,
+				A299D3DE24A518F600BE7BB7 /* WatchLunchPlacesList.swift */,
 				A299D3C424A505A700BE7BB7 /* NotificationController.swift */,
 				A299D3C624A505A700BE7BB7 /* NotificationView.swift */,
 				A299D3C824A505A700BE7BB7 /* Assets.xcassets */,
@@ -594,8 +601,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A299D3E224A51A6E00BE7BB7 /* charleyrivers_feature.jpg in Resources */,
+				A299D3E324A51A6E00BE7BB7 /* turtlerock_feature.jpg in Resources */,
 				A299D3CC24A505A700BE7BB7 /* Preview Assets.xcassets in Resources */,
+				A299D3E024A51A6E00BE7BB7 /* chilkoottrail.jpg in Resources */,
 				A299D3DD24A506FB00BE7BB7 /* Assets.xcassets in Resources */,
+				A299D3E124A51A6E00BE7BB7 /* stmarylake_feature.jpg in Resources */,
 				A299D3C924A505A700BE7BB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +676,7 @@
 			files = (
 				A299D3C524A505A700BE7BB7 /* NotificationController.swift in Sources */,
 				A299D3C324A505A700BE7BB7 /* ContentView.swift in Sources */,
+				A299D3DF24A518F600BE7BB7 /* WatchLunchPlacesList.swift in Sources */,
 				A299D3C124A505A700BE7BB7 /* Lunch_PlacesApp.swift in Sources */,
 				A299D3C724A505A700BE7BB7 /* NotificationView.swift in Sources */,
 				A299D3DB24A5061C00BE7BB7 /* LunchPlace.swift in Sources */,

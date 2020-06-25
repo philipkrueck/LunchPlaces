@@ -15,6 +15,7 @@ struct Lunch_PlacesApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
+                    .environmentObject(store)
             }
         }
 

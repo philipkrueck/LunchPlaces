@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreGraphics
+import ImageIO
 import SwiftUI
 
 func load<T: Decodable>(_ filename: String) -> T {
