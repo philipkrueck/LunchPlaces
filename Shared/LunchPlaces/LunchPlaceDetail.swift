@@ -24,14 +24,9 @@ struct NavigationBarTitleStyle: ViewModifier {
 
 struct LunchPlaceDetail: View {
     
-    @State private var region = MKCoordinateRegion()
+    @Binding var region: MKCoordinateRegion
     
     var lunchPlace: LunchPlace
-    
-    init(lunchPlace: LunchPlace) {
-        self.lunchPlace = lunchPlace
-        self.region = MKCoordinateRegion(center: lunchPlace.locationCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
-    }
     
     private var platformIsiOS: Bool {
         #if os(iOS)
@@ -140,7 +135,7 @@ struct LunchPlaceDetail: View {
 struct LunchPlaceDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            LunchPlaceDetail(lunchPlace: testData[0])
+            LunchPlaceDetail(region: .constant(testData[0].coordinateRegion), lunchPlace: testData[0])
         }
         .previewDevice("iPhone SE (2nd generation)")
     }

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A20E100F24A386A20029D429 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E100E24A386A20029D429 /* Tests_iOS.swift */; };
-		A20E101A24A386A20029D429 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E101924A386A20029D429 /* Tests_macOS.swift */; };
 		A20E101C24A386A20029D429 /* Lunch_PlacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E0FF324A386A10029D429 /* Lunch_PlacesApp.swift */; };
 		A20E101D24A386A20029D429 /* Lunch_PlacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E0FF324A386A10029D429 /* Lunch_PlacesApp.swift */; };
 		A20E101E24A386A20029D429 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E0FF424A386A10029D429 /* ContentView.swift */; };
@@ -43,10 +41,22 @@
 		A299D3DC24A5062400BE7BB7 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9199024A4782F00860D78 /* ImageStore.swift */; };
 		A299D3DD24A506FB00BE7BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20E0FF524A386A20029D429 /* Assets.xcassets */; };
 		A299D3DF24A518F600BE7BB7 /* WatchLunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299D3DE24A518F600BE7BB7 /* WatchLunchPlacesList.swift */; };
-		A299D3E024A51A6E00BE7BB7 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199424A4789500860D78 /* chilkoottrail.jpg */; };
-		A299D3E124A51A6E00BE7BB7 /* stmarylake_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199724A4789500860D78 /* stmarylake_feature.jpg */; };
-		A299D3E224A51A6E00BE7BB7 /* charleyrivers_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */; };
-		A299D3E324A51A6E00BE7BB7 /* turtlerock_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199524A4789500860D78 /* turtlerock_feature.jpg */; };
+		A299D3E524A51F5F00BE7BB7 /* WatchLunchPlacesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299D3E424A51F5F00BE7BB7 /* WatchLunchPlacesDetail.swift */; };
+		A299D3FB24A5286200BE7BB7 /* deananddavid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D3F224A5275500BE7BB7 /* deananddavid.jpg */; };
+		A299D3FD24A5286200BE7BB7 /* edelcurry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D3F624A527B200BE7BB7 /* edelcurry.jpg */; };
+		A299D3FF24A5286300BE7BB7 /* deananddavid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D3F224A5275500BE7BB7 /* deananddavid.jpg */; };
+		A299D40124A5286300BE7BB7 /* edelcurry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D3F624A527B200BE7BB7 /* edelcurry.jpg */; };
+		A299D40324A5286300BE7BB7 /* deananddavid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D3F224A5275500BE7BB7 /* deananddavid.jpg */; };
+		A299D40524A5286300BE7BB7 /* edelcurry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D3F624A527B200BE7BB7 /* edelcurry.jpg */; };
+		A299D40F24A52A0600BE7BB7 /* subway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D40E24A52A0600BE7BB7 /* subway.jpg */; };
+		A299D41024A52A0600BE7BB7 /* subway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D40E24A52A0600BE7BB7 /* subway.jpg */; };
+		A299D41124A52A0600BE7BB7 /* subway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D40E24A52A0600BE7BB7 /* subway.jpg */; };
+		A299D41324A52A3200BE7BB7 /* dominos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D41224A52A3200BE7BB7 /* dominos.jpg */; };
+		A299D41424A52A3200BE7BB7 /* dominos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D41224A52A3200BE7BB7 /* dominos.jpg */; };
+		A299D41524A52A3200BE7BB7 /* dominos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D41224A52A3200BE7BB7 /* dominos.jpg */; };
+		A299D41B24A52B1200BE7BB7 /* stadtsalat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D41A24A52B1200BE7BB7 /* stadtsalat.jpg */; };
+		A299D41C24A52B1200BE7BB7 /* stadtsalat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D41A24A52B1200BE7BB7 /* stadtsalat.jpg */; };
+		A299D41D24A52B1200BE7BB7 /* stadtsalat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D41A24A52B1200BE7BB7 /* stadtsalat.jpg */; };
 		A2C9198424A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
 		A2C9198524A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
 		A2C9198824A3E37B00860D78 /* LunchPlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198724A3E37B00860D78 /* LunchPlaceRow.swift */; };
@@ -55,31 +65,9 @@
 		A2C9198F24A3F8F500860D78 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198D24A3F8F500860D78 /* VisualEffectBlur.swift */; };
 		A2C9199124A4782F00860D78 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9199024A4782F00860D78 /* ImageStore.swift */; };
 		A2C9199224A4782F00860D78 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9199024A4782F00860D78 /* ImageStore.swift */; };
-		A2C9199824A4789500860D78 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199424A4789500860D78 /* chilkoottrail.jpg */; };
-		A2C9199924A4789500860D78 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199424A4789500860D78 /* chilkoottrail.jpg */; };
-		A2C9199A24A4789500860D78 /* turtlerock_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199524A4789500860D78 /* turtlerock_feature.jpg */; };
-		A2C9199B24A4789500860D78 /* turtlerock_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199524A4789500860D78 /* turtlerock_feature.jpg */; };
-		A2C9199C24A4789500860D78 /* charleyrivers_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */; };
-		A2C9199D24A4789500860D78 /* charleyrivers_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */; };
-		A2C9199E24A4789500860D78 /* stmarylake_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199724A4789500860D78 /* stmarylake_feature.jpg */; };
-		A2C9199F24A4789500860D78 /* stmarylake_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199724A4789500860D78 /* stmarylake_feature.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A20E100B24A386A20029D429 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A20E0FEE24A386A10029D429 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A20E0FF924A386A20029D429;
-			remoteInfo = iOS;
-		};
-		A20E101624A386A20029D429 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A20E0FEE24A386A10029D429 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A20E100124A386A20029D429;
-			remoteInfo = macOS;
-		};
 		A299D3B124A505A500BE7BB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A20E0FEE24A386A10029D429 /* Project object */;
@@ -130,10 +118,8 @@
 		A20E100224A386A20029D429 /* Lunch Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20E100424A386A20029D429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20E100524A386A20029D429 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		A20E100A24A386A20029D429 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20E100E24A386A20029D429 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		A20E101024A386A20029D429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A20E101524A386A20029D429 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20E101924A386A20029D429 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		A20E101B24A386A20029D429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20E103024A38D600029D429 /* LunchPlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceDetail.swift; sourceTree = "<group>"; };
@@ -157,15 +143,17 @@
 		A299D3CD24A505A700BE7BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A299D3CE24A505A700BE7BB7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A299D3DE24A518F600BE7BB7 /* WatchLunchPlacesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLunchPlacesList.swift; sourceTree = "<group>"; };
+		A299D3E424A51F5F00BE7BB7 /* WatchLunchPlacesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLunchPlacesDetail.swift; sourceTree = "<group>"; };
+		A299D3F224A5275500BE7BB7 /* deananddavid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deananddavid.jpg; sourceTree = "<group>"; };
+		A299D3F624A527B200BE7BB7 /* edelcurry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = edelcurry.jpg; sourceTree = "<group>"; };
+		A299D40E24A52A0600BE7BB7 /* subway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = subway.jpg; path = ../../../../../Downloads/subway.jpg; sourceTree = "<group>"; };
+		A299D41224A52A3200BE7BB7 /* dominos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dominos.jpg; sourceTree = "<group>"; };
+		A299D41A24A52B1200BE7BB7 /* stadtsalat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stadtsalat.jpg; sourceTree = "<group>"; };
 		A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLunchPlaces.swift; sourceTree = "<group>"; };
 		A2C9198724A3E37B00860D78 /* LunchPlaceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceRow.swift; sourceTree = "<group>"; };
 		A2C9198A24A3F8C800860D78 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		A2C9198D24A3F8F500860D78 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		A2C9199024A4782F00860D78 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
-		A2C9199424A4789500860D78 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
-		A2C9199524A4789500860D78 /* turtlerock_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock_feature.jpg; sourceTree = "<group>"; };
-		A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers_feature.jpg; sourceTree = "<group>"; };
-		A2C9199724A4789500860D78 /* stmarylake_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake_feature.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,20 +165,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A20E0FFF24A386A20029D429 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A20E100724A386A20029D429 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A20E101224A386A20029D429 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,8 +215,6 @@
 			children = (
 				A20E0FFA24A386A20029D429 /* Lunch Places.app */,
 				A20E100224A386A20029D429 /* Lunch Places.app */,
-				A20E100A24A386A20029D429 /* Tests iOS.xctest */,
-				A20E101524A386A20029D429 /* Tests macOS.xctest */,
 				A299D3AC24A505A500BE7BB7 /* WatchLunchPlaces.app */,
 				A299D3AF24A505A500BE7BB7 /* WatchLunchPlaces WatchKit App.app */,
 				A299D3BB24A505A600BE7BB7 /* WatchLunchPlaces WatchKit Extension.appex */,
@@ -321,6 +293,7 @@
 				A299D3C024A505A700BE7BB7 /* Lunch_PlacesApp.swift */,
 				A299D3C224A505A700BE7BB7 /* ContentView.swift */,
 				A299D3DE24A518F600BE7BB7 /* WatchLunchPlacesList.swift */,
+				A299D3E424A51F5F00BE7BB7 /* WatchLunchPlacesDetail.swift */,
 				A299D3C424A505A700BE7BB7 /* NotificationController.swift */,
 				A299D3C624A505A700BE7BB7 /* NotificationView.swift */,
 				A299D3C824A505A700BE7BB7 /* Assets.xcassets */,
@@ -353,10 +326,11 @@
 		A2C9199324A4787700860D78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */,
-				A2C9199424A4789500860D78 /* chilkoottrail.jpg */,
-				A2C9199724A4789500860D78 /* stmarylake_feature.jpg */,
-				A2C9199524A4789500860D78 /* turtlerock_feature.jpg */,
+				A299D40E24A52A0600BE7BB7 /* subway.jpg */,
+				A299D41224A52A3200BE7BB7 /* dominos.jpg */,
+				A299D3F224A5275500BE7BB7 /* deananddavid.jpg */,
+				A299D3F624A527B200BE7BB7 /* edelcurry.jpg */,
+				A299D41A24A52B1200BE7BB7 /* stadtsalat.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -397,42 +371,6 @@
 			productName = macOS;
 			productReference = A20E100224A386A20029D429 /* Lunch Places.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A20E100924A386A20029D429 /* Tests iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A20E102A24A386A20029D429 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
-			buildPhases = (
-				A20E100624A386A20029D429 /* Sources */,
-				A20E100724A386A20029D429 /* Frameworks */,
-				A20E100824A386A20029D429 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A20E100C24A386A20029D429 /* PBXTargetDependency */,
-			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = A20E100A24A386A20029D429 /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		A20E101424A386A20029D429 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A20E102D24A386A20029D429 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				A20E101124A386A20029D429 /* Sources */,
-				A20E101224A386A20029D429 /* Frameworks */,
-				A20E101324A386A20029D429 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A20E101724A386A20029D429 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = A20E101524A386A20029D429 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		A299D3AB24A505A500BE7BB7 /* WatchLunchPlaces */ = {
 			isa = PBXNativeTarget;
@@ -500,14 +438,6 @@
 					A20E100124A386A20029D429 = {
 						CreatedOnToolsVersion = 12.0;
 					};
-					A20E100924A386A20029D429 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = A20E0FF924A386A20029D429;
-					};
-					A20E101424A386A20029D429 = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = A20E100124A386A20029D429;
-					};
 					A299D3AB24A505A500BE7BB7 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -534,8 +464,6 @@
 			targets = (
 				A20E0FF924A386A20029D429 /* iOS */,
 				A20E100124A386A20029D429 /* macOS */,
-				A20E100924A386A20029D429 /* Tests iOS */,
-				A20E101424A386A20029D429 /* Tests macOS */,
 				A299D3AB24A505A500BE7BB7 /* WatchLunchPlaces */,
 				A299D3AE24A505A500BE7BB7 /* WatchLunchPlaces WatchKit App */,
 				A299D3BA24A505A600BE7BB7 /* WatchLunchPlaces WatchKit Extension */,
@@ -548,11 +476,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A299D3FD24A5286200BE7BB7 /* edelcurry.jpg in Resources */,
 				A20E102024A386A20029D429 /* Assets.xcassets in Resources */,
-				A2C9199824A4789500860D78 /* chilkoottrail.jpg in Resources */,
-				A2C9199C24A4789500860D78 /* charleyrivers_feature.jpg in Resources */,
-				A2C9199E24A4789500860D78 /* stmarylake_feature.jpg in Resources */,
-				A2C9199A24A4789500860D78 /* turtlerock_feature.jpg in Resources */,
+				A299D41B24A52B1200BE7BB7 /* stadtsalat.jpg in Resources */,
+				A299D3FB24A5286200BE7BB7 /* deananddavid.jpg in Resources */,
+				A299D40F24A52A0600BE7BB7 /* subway.jpg in Resources */,
+				A299D41324A52A3200BE7BB7 /* dominos.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,25 +489,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A299D40124A5286300BE7BB7 /* edelcurry.jpg in Resources */,
 				A20E102124A386A20029D429 /* Assets.xcassets in Resources */,
-				A2C9199924A4789500860D78 /* chilkoottrail.jpg in Resources */,
-				A2C9199D24A4789500860D78 /* charleyrivers_feature.jpg in Resources */,
-				A2C9199F24A4789500860D78 /* stmarylake_feature.jpg in Resources */,
-				A2C9199B24A4789500860D78 /* turtlerock_feature.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A20E100824A386A20029D429 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A20E101324A386A20029D429 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A299D41C24A52B1200BE7BB7 /* stadtsalat.jpg in Resources */,
+				A299D3FF24A5286300BE7BB7 /* deananddavid.jpg in Resources */,
+				A299D41024A52A0600BE7BB7 /* subway.jpg in Resources */,
+				A299D41424A52A3200BE7BB7 /* dominos.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,13 +517,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A299D3E224A51A6E00BE7BB7 /* charleyrivers_feature.jpg in Resources */,
-				A299D3E324A51A6E00BE7BB7 /* turtlerock_feature.jpg in Resources */,
+				A299D40324A5286300BE7BB7 /* deananddavid.jpg in Resources */,
+				A299D40524A5286300BE7BB7 /* edelcurry.jpg in Resources */,
+				A299D41D24A52B1200BE7BB7 /* stadtsalat.jpg in Resources */,
+				A299D41524A52A3200BE7BB7 /* dominos.jpg in Resources */,
 				A299D3CC24A505A700BE7BB7 /* Preview Assets.xcassets in Resources */,
-				A299D3E024A51A6E00BE7BB7 /* chilkoottrail.jpg in Resources */,
 				A299D3DD24A506FB00BE7BB7 /* Assets.xcassets in Resources */,
-				A299D3E124A51A6E00BE7BB7 /* stmarylake_feature.jpg in Resources */,
 				A299D3C924A505A700BE7BB7 /* Assets.xcassets in Resources */,
+				A299D41124A52A0600BE7BB7 /* subway.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,22 +571,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A20E100624A386A20029D429 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A20E100F24A386A20029D429 /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A20E101124A386A20029D429 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A20E101A24A386A20029D429 /* Tests_macOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A299D3B724A505A600BE7BB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -682,22 +583,13 @@
 				A299D3DB24A5061C00BE7BB7 /* LunchPlace.swift in Sources */,
 				A299D3DC24A5062400BE7BB7 /* ImageStore.swift in Sources */,
 				A299D3DA24A5061100BE7BB7 /* LunchPlaceStore.swift in Sources */,
+				A299D3E524A51F5F00BE7BB7 /* WatchLunchPlacesDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A20E100C24A386A20029D429 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A20E0FF924A386A20029D429 /* iOS */;
-			targetProxy = A20E100B24A386A20029D429 /* PBXContainerItemProxy */;
-		};
-		A20E101724A386A20029D429 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A20E100124A386A20029D429 /* macOS */;
-			targetProxy = A20E101624A386A20029D429 /* PBXContainerItemProxy */;
-		};
 		A299D3B224A505A500BE7BB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A299D3AE24A505A500BE7BB7 /* WatchLunchPlaces WatchKit App */;
@@ -915,95 +807,6 @@
 			};
 			name = Release;
 		};
-		A20E102B24A386A20029D429 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42666696DJ;
-				INFOPLIST_FILE = "Tests iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.philip.krueck.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOS;
-			};
-			name = Debug;
-		};
-		A20E102C24A386A20029D429 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42666696DJ;
-				INFOPLIST_FILE = "Tests iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.philip.krueck.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOS;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A20E102E24A386A20029D429 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 42666696DJ;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.philip.krueck.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = macOS;
-			};
-			name = Debug;
-		};
-		A20E102F24A386A20029D429 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 42666696DJ;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.philip.krueck.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = macOS;
-			};
-			name = Release;
-		};
 		A299D3CF24A505A700BE7BB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1151,24 +954,6 @@
 			buildConfigurations = (
 				A20E102824A386A20029D429 /* Debug */,
 				A20E102924A386A20029D429 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A20E102A24A386A20029D429 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A20E102B24A386A20029D429 /* Debug */,
-				A20E102C24A386A20029D429 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A20E102D24A386A20029D429 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A20E102E24A386A20029D429 /* Debug */,
-				A20E102F24A386A20029D429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

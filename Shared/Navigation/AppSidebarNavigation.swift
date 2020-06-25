@@ -26,12 +26,12 @@ struct AppSidebarNavigation: View {
             .tag(NavigationItem.menu)
             
             NavigationLink(destination: FavoriteLunchPlacesList()) {
-                Label("Favorites", systemImage: "heart.fill")
+                Label("Favorites", systemImage: "heart")
             }
             .tag(NavigationItem.favorites)
             
             NavigationLink(destination: Text("Today")) {
-                Label("Today", systemImage: "capsule.fill")
+                Label("Today", systemImage: "capsule")
             }
             .tag(NavigationItem.today)
         }

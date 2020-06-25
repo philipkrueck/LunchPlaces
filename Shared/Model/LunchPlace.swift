@@ -40,6 +40,10 @@ extension LunchPlace {
     var image: Image {
         ImageStore.shared.image(name: imageName)
     }
+    
+    var coordinateRegion: MKCoordinateRegion {
+        MKCoordinateRegion(center: locationCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    }
 }
 
 struct Coordinates: Hashable, Codable {
@@ -53,14 +57,25 @@ struct Address: Identifiable, Hashable {
     let houseNumber: String
     let postalCode: String
     let city: String
-    
-    static let testAddress: Address = .init(streetName: "Hainbuchenweg", houseNumber: "4", postalCode: "22299", city: "Hamburg")
 }
 
+
+// MARK: - Test Data
+
+let subwayAddress: Address = .init(streetName: "Neustädter Str.", houseNumber: "27", postalCode: "20355", city: "Hamburg")
+let dominosAddress: Address = .init(streetName: "Valentinskamp", houseNumber: "30", postalCode: "20355", city: "Hamburg")
+let stadtSalatAddress: Address = .init(streetName: "Große Theaterstraße", houseNumber: "31-35", postalCode: "20355", city: "Hamburg")
+let deanAndDavidAddress: Address = .init(streetName: "Ballindamm", houseNumber: "40", postalCode: "20095", city: "Hamburg")
+let edelCurryAddress: Address = .init(streetName: "Große Bleichen", houseNumber: "68", postalCode: "20354", city: "Hamburg")
+
+
 let testData = [
-    LunchPlace(name: "Subway", isFavorite: true, coordinates: Coordinates(latitude: 10, longitude: 10), imageName: "charleyrivers_feature", address: .testAddress),
-    LunchPlace(name: "Dominos", isFavorite: false, coordinates: Coordinates(latitude: 10, longitude: 10), imageName: "chilkoottrail", address: .testAddress),
-    LunchPlace(name: "2 Türen Italiener", isFavorite: true, coordinates: Coordinates(latitude: 10, longitude: 10), imageName: "stmarylake_feature", address: .testAddress),
-    LunchPlace(name: "Stadtsalat", isFavorite: false, coordinates: Coordinates(latitude: 10, longitude: 10), imageName: "stmarylake_feature", address: .testAddress),
-    LunchPlace(name: "Edelcurry", isFavorite: false, coordinates: Coordinates(latitude: 10, longitude: 10), imageName: "turtlerock_feature", address: .testAddress)
+    LunchPlace(name: "Subway", isFavorite: true, coordinates: Coordinates(latitude: 53.553330, longitude: 9.983250), imageName: "subway", address: subwayAddress),
+    LunchPlace(name: "Dominos", isFavorite: false, coordinates: Coordinates(latitude: 53.555530, longitude: 9.983580), imageName: "dominos", address: dominosAddress),
+    LunchPlace(name: "Stadtsalat", isFavorite: true, coordinates: Coordinates(latitude: 53.556910, longitude: 9.989160), imageName: "stadtsalat", address: stadtSalatAddress),
+    LunchPlace(name: "Dean & David", isFavorite: false, coordinates: Coordinates(latitude: 53.551819, longitude: 9.995330), imageName: "deananddavid", address: deanAndDavidAddress)
 ]
+
+let edelCurry = LunchPlace(name: "Edelcurry", isFavorite: false, coordinates: Coordinates(latitude: 53.552259, longitude: 9.986248), imageName: "edelcurry", address: edelCurryAddress)
+
+

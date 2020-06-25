@@ -24,7 +24,7 @@ struct FavoriteLunchPlacesList: View {
     var content: some View {
         List(selection: $selection) {
             ForEach(store.favoriteLunchPlaces) { lunchPlace in
-                NavigationLink(destination: LunchPlaceDetail(lunchPlace: lunchPlace), tag: lunchPlace, selection: $selection) {
+                NavigationLink(destination: LunchPlaceDetail(region: .constant(lunchPlace.coordinateRegion), lunchPlace: lunchPlace), tag: lunchPlace, selection: $selection) {
                     LunchPlaceRow(lunchPlace: lunchPlace)
                 }
                 .tag(lunchPlace)

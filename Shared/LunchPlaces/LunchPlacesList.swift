@@ -22,7 +22,7 @@ struct LunchPlacesList: View {
     var content: some View {
         List() {
             ForEach(store.lunchPlaces) { lunchPlace in
-                NavigationLink(destination: LunchPlaceDetail(lunchPlace: lunchPlace)) {
+                NavigationLink(destination: LunchPlaceDetail(region: .constant(lunchPlace.coordinateRegion), lunchPlace: lunchPlace)) {
                     LunchPlaceRow(lunchPlace: lunchPlace)
                 }
                 .tag(lunchPlace)
@@ -58,7 +58,7 @@ struct LunchPlacesList: View {
     
     func addLunchPlace() {
         withAnimation {
-            store.addLunchPlace(LunchPlace(name: "Grieche", isFavorite: true, coordinates: Coordinates(latitude: 10, longitude: 10), imageName: "turtlerock_feature", address: .testAddress))
+            store.addLunchPlace(edelCurry)
         }
     }
     

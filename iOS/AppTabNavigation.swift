@@ -25,7 +25,11 @@ struct AppTabNavigation: View {
                 FavoriteLunchPlacesList()
             }
             .tabItem {
-                Label("Favorites", systemImage: "heart.fill")
+                if selection == .favorites {
+                    Label("Favorites", systemImage: "heart.fill")
+                } else {
+                    Label("Favorites", systemImage: "heart")
+                }
             }
             .tag(Tab.favorites)
             
@@ -33,7 +37,11 @@ struct AppTabNavigation: View {
                 Text("Today")
             }
             .tabItem {
-                Label("Today", systemImage: "capsule.fill")
+                if selection == .today {
+                    Label("Today", systemImage: "capsule.fill")
+                } else {
+                    Label("Today", systemImage: "capsule")
+                }
             }
             .tag(Tab.today)
             
@@ -41,7 +49,11 @@ struct AppTabNavigation: View {
                 UserProfile()
             }
             .tabItem {
-                Label("Profile", systemImage: "person.crop.circle.fill")
+                if selection == .today {
+                    Label("Profile", systemImage: "person.crop.circle")
+                } else {
+                    Label("Profile", systemImage: "person.crop.circle.fill")
+                }
             }
             .tag(Tab.profile)
         }
