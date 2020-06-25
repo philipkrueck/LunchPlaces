@@ -80,7 +80,7 @@ struct LunchPlaceDetail: View {
         VStack(spacing: 0) {
             Divider()
             HStack {
-                VStack(alignment: .leading){
+                VStack(alignment: .leading) {
                     Text("\(lunchPlace.address.streetName) \(lunchPlace.address.houseNumber)")
                         .font(.caption)
                         .foregroundColor(.primary)

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LunchPlacesList: View {
     @EnvironmentObject private var store: LunchPlaceStore
+    @State private var isShowingMapSheet = false
     
     @ViewBuilder var body: some View {
         #if os(iOS)
@@ -39,6 +40,10 @@ struct LunchPlacesList: View {
                 }
             }
         }
+        .sheet(isPresented: $isShowingMapSheet) {
+            LunchPlaceSelectionMap()
+                .environmentObject(store)
+        }
         .navigationTitle("Lunch Places")
         .toolbar {
             #if os(iOS)
@@ -48,7 +53,9 @@ struct LunchPlacesList: View {
             #endif
             
             ToolbarItem(placement: .primaryAction) {
-                Button(action: addLunchPlace){
+                Button(action: {
+                        isShowingMapSheet.toggle()
+                }){
                     Label("Add", systemImage: "plus")
                         .labelStyle(IconOnlyLabelStyle())
                 }
