@@ -80,7 +80,25 @@ struct AppSidebarNavigation: View {
                 .buttonStyle(PlainButtonStyle())
             }
             .sheet(isPresented: $presentingProfile) {
-                Text("Showing User Profile")
+                #if os(iOS)
+                UserProfile()
+                #else
+                VStack() {
+                    Spacer()
+                    UserProfile()
+                    Divider()
+                    HStack {
+                        Spacer()
+                        Button(action: { presentingProfile = false }) {
+                            Text("Done")
+                        }
+                        .keyboardShortcut(.defaultAction)
+                    }
+                    .padding()
+                    .background(VisualEffectBlur())
+                }
+                .frame(minWidth: 400, maxWidth: 600, minHeight: 350, maxHeight: 500)
+                #endif
             }
         }
     }

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct LunchPlacesList: View {
     @EnvironmentObject private var store: LunchPlaceStore
-    @State private var selection: LunchPlace?
     
     @ViewBuilder var body: some View {
         #if os(iOS)
@@ -21,13 +20,12 @@ struct LunchPlacesList: View {
     }
     
     var content: some View {
-        List(selection: $selection) {
+        List() {
             ForEach(store.lunchPlaces) { lunchPlace in
-                NavigationLink(destination: LunchPlaceDetail(lunchPlace: lunchPlace), tag: lunchPlace, selection: $selection) {
+                NavigationLink(destination: LunchPlaceDetail(lunchPlace: lunchPlace)) {
                     LunchPlaceRow(lunchPlace: lunchPlace)
                 }
                 .tag(lunchPlace)
-                // ToDo: add onReceive
             }
             .onMove(perform: moveLunchPlace)
             .onDelete(perform: deleteSandwiches)

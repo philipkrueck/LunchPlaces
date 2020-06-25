@@ -9,10 +9,13 @@ import SwiftUI
 import MapKit
 
 struct NavigationBarTitleStyle: ViewModifier {
+    var title: String
+    
     @ViewBuilder func body(content: Content) -> some View {
         #if os(iOS)
         content
             .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle(title)
         #else
         content
         #endif
@@ -47,8 +50,7 @@ struct LunchPlaceDetail: View {
                 .frame(minWidth: 500, idealWidth: 700, maxWidth: .infinity, minHeight: 300, maxHeight: .infinity)
             #endif
         }
-        .navigationTitle(lunchPlace.name)
-        .modifier(NavigationBarTitleStyle())
+        .modifier(NavigationBarTitleStyle(title: lunchPlace.name))
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button(action: {

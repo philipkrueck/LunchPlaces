@@ -38,7 +38,7 @@ struct AppTabNavigation: View {
             .tag(Tab.today)
             
             NavigationView {
-                Text("Profile")
+                UserProfile()
             }
             .tabItem {
                 Label("Profile", systemImage: "person.crop.circle.fill")

@@ -30,6 +30,10 @@ class LunchPlaceStore: ObservableObject {
     func removeLunchPlace(at offsets: IndexSet) {
         lunchPlaces.remove(atOffsets: offsets)
     }
+    
+    func lunchPlaceStore(for id: LunchPlace.ID) -> LunchPlace? {
+        return lunchPlaces.first(where: { $0.id == id })
+    }
 }
 
 let testStore = LunchPlaceStore(lunchPlaces: testData)

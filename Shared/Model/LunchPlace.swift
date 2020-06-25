@@ -36,6 +36,7 @@ struct LunchPlace: Identifiable, Hashable, Equatable {
 }
 
 extension LunchPlace {
+    
     var image: Image {
         ImageStore.shared.image(name: imageName)
     }
