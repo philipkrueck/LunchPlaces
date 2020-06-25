@@ -15,6 +15,10 @@ class LunchPlaceStore: ObservableObject {
         self.lunchPlaces = lunchPlaces
     }
     
+    var favoriteLunchPlaces: [LunchPlace] {
+        lunchPlaces.filter { $0.isFavorite }
+    }
+    
     func addLunchPlace(_ lunchPlace: LunchPlace) {
         lunchPlaces.append(lunchPlace)
     }

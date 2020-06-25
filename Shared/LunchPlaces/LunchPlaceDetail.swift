@@ -6,11 +6,39 @@
 //
 
 import SwiftUI
+import MapKit
+
+struct NavigationBarTitleStyle: ViewModifier {
+    @ViewBuilder func body(content: Content) -> some View {
+        #if os(iOS)
+        content
+            .navigationBarTitleDisplayMode(.inline)
+        #else
+        content
+        #endif
+    }
+}
 
 struct LunchPlaceDetail: View {
+    
+    @State private var region = MKCoordinateRegion()
+    
     var lunchPlace: LunchPlace
     
-    var body: some View {
+    init(lunchPlace: LunchPlace) {
+        self.lunchPlace = lunchPlace
+        self.region = MKCoordinateRegion(center: lunchPlace.locationCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    }
+    
+    private var platformIsiOS: Bool {
+        #if os(iOS)
+        return true
+        #else
+        return false
+        #endif
+    }
+    
+    @ViewBuilder var body: some View {
         Group {
             #if os(iOS)
             container
@@ -20,6 +48,7 @@ struct LunchPlaceDetail: View {
             #endif
         }
         .navigationTitle(lunchPlace.name)
+        .modifier(NavigationBarTitleStyle())
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button(action: {
@@ -34,8 +63,74 @@ struct LunchPlaceDetail: View {
     }
     
     var container: some View {
+        ZStack {
+            GeometryReader { proxy in
+                ScrollView {
+                    #if os(iOS)
+                    content(size: proxy.size)
+                    #else
+                    content(size: proxy.size)
+                        .frame(maxWidth: 600)
+                        .frame(maxWidth: .infinity)
+                    #endif
+                }
+            }
+            .overlay(bottomBar, alignment: .bottom)
+        }
+    }
+    
+    var bottomBar: some View {
+        VStack(spacing: 0) {
+            Divider()
+            HStack {
+                VStack(alignment: .leading){
+                    Text("\(lunchPlace.address.streetName) \(lunchPlace.address.houseNumber)")
+                        .font(.caption)
+                        .foregroundColor(.primary)
+                    Text("\(lunchPlace.address.postalCode) \(lunchPlace.address.city)")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                }
+                Spacer()
+                
+                Button("Open in Maps") {
+                    let destination = MKMapItem(placemark: MKPlacemark(coordinate: lunchPlace.locationCoordinate))
+                    destination.name = lunchPlace.name
+                    destination.openInMaps()
+                }
+                
+            }
+            .padding(16)
+            
+        }
+        .background(VisualEffectBlur().edgesIgnoringSafeArea(.all))
+    }
+    
+    func content(size: CGSize) -> some View {
         VStack {
-            Text(lunchPlace.name)
+            lunchPlace.image
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: size.width)
+                .background(Color.green)
+            
+            VStack(alignment: .leading) {
+                Text("Map")
+                    .font(Font.title).bold()
+                    .foregroundColor(.secondary)
+                    .padding(.horizontal)
+                
+                HStack {
+                    Spacer()
+                    Map(coordinateRegion: $region)
+                        .frame(width: size.width - 20, height: 300) // ToDo: Maybe make this dynamic for MacOS || iPadOS
+                        .cornerRadius(15)
+                        .shadow(radius: 6)
+                    Spacer()
+                }
+            }
+            .padding(.bottom, 90)
+            
         }
     }
 }
@@ -45,5 +140,6 @@ struct LunchPlaceDetail_Previews: PreviewProvider {
         NavigationView {
             LunchPlaceDetail(lunchPlace: testData[0])
         }
+        .previewDevice("iPhone SE (2nd generation)")
     }
 }

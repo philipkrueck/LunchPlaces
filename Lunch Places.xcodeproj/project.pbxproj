@@ -21,16 +21,28 @@
 		A20E103524A39C410029D429 /* LunchPlaceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103324A39C410029D429 /* LunchPlaceStore.swift */; };
 		A20E103724A39C7D0029D429 /* LunchPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103624A39C7D0029D429 /* LunchPlace.swift */; };
 		A20E103824A39C7D0029D429 /* LunchPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E103624A39C7D0029D429 /* LunchPlace.swift */; };
-		A219CE0024A3D2C100A10F98 /* LunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CDFF24A3D2C100A10F98 /* LunchPlaces.swift */; };
-		A219CE0124A3D2C100A10F98 /* LunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CDFF24A3D2C100A10F98 /* LunchPlaces.swift */; };
+		A219CE0024A3D2C100A10F98 /* LunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CDFF24A3D2C100A10F98 /* LunchPlacesList.swift */; };
+		A219CE0124A3D2C100A10F98 /* LunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CDFF24A3D2C100A10F98 /* LunchPlacesList.swift */; };
 		A219CE0724A3D3C900A10F98 /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CE0624A3D3C900A10F98 /* AppSidebarNavigation.swift */; };
 		A219CE0824A3D3C900A10F98 /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CE0624A3D3C900A10F98 /* AppSidebarNavigation.swift */; };
 		A219CE0A24A3D40000A10F98 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CE0924A3D40000A10F98 /* AppTabNavigation.swift */; };
 		A219CE0B24A3D40000A10F98 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CE0924A3D40000A10F98 /* AppTabNavigation.swift */; };
 		A2C9198424A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
 		A2C9198524A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
-		A2C9198824A3E37B00860D78 /* LunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198724A3E37B00860D78 /* LunchPlacesList.swift */; };
-		A2C9198924A3E37B00860D78 /* LunchPlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198724A3E37B00860D78 /* LunchPlacesList.swift */; };
+		A2C9198824A3E37B00860D78 /* LunchPlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198724A3E37B00860D78 /* LunchPlaceRow.swift */; };
+		A2C9198924A3E37B00860D78 /* LunchPlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198724A3E37B00860D78 /* LunchPlaceRow.swift */; };
+		A2C9198B24A3F8C800860D78 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198A24A3F8C800860D78 /* VisualEffectBlur.swift */; };
+		A2C9198F24A3F8F500860D78 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198D24A3F8F500860D78 /* VisualEffectBlur.swift */; };
+		A2C9199124A4782F00860D78 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9199024A4782F00860D78 /* ImageStore.swift */; };
+		A2C9199224A4782F00860D78 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9199024A4782F00860D78 /* ImageStore.swift */; };
+		A2C9199824A4789500860D78 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199424A4789500860D78 /* chilkoottrail.jpg */; };
+		A2C9199924A4789500860D78 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199424A4789500860D78 /* chilkoottrail.jpg */; };
+		A2C9199A24A4789500860D78 /* turtlerock_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199524A4789500860D78 /* turtlerock_feature.jpg */; };
+		A2C9199B24A4789500860D78 /* turtlerock_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199524A4789500860D78 /* turtlerock_feature.jpg */; };
+		A2C9199C24A4789500860D78 /* charleyrivers_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */; };
+		A2C9199D24A4789500860D78 /* charleyrivers_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */; };
+		A2C9199E24A4789500860D78 /* stmarylake_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199724A4789500860D78 /* stmarylake_feature.jpg */; };
+		A2C9199F24A4789500860D78 /* stmarylake_feature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C9199724A4789500860D78 /* stmarylake_feature.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,11 +80,18 @@
 		A20E103024A38D600029D429 /* LunchPlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceDetail.swift; sourceTree = "<group>"; };
 		A20E103324A39C410029D429 /* LunchPlaceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceStore.swift; sourceTree = "<group>"; };
 		A20E103624A39C7D0029D429 /* LunchPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlace.swift; sourceTree = "<group>"; };
-		A219CDFF24A3D2C100A10F98 /* LunchPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaces.swift; sourceTree = "<group>"; };
+		A219CDFF24A3D2C100A10F98 /* LunchPlacesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlacesList.swift; sourceTree = "<group>"; };
 		A219CE0624A3D3C900A10F98 /* AppSidebarNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSidebarNavigation.swift; sourceTree = "<group>"; };
 		A219CE0924A3D40000A10F98 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
 		A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLunchPlaces.swift; sourceTree = "<group>"; };
-		A2C9198724A3E37B00860D78 /* LunchPlacesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlacesList.swift; sourceTree = "<group>"; };
+		A2C9198724A3E37B00860D78 /* LunchPlaceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchPlaceRow.swift; sourceTree = "<group>"; };
+		A2C9198A24A3F8C800860D78 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		A2C9198D24A3F8F500860D78 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		A2C9199024A4782F00860D78 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		A2C9199424A4789500860D78 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
+		A2C9199524A4789500860D78 /* turtlerock_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock_feature.jpg; sourceTree = "<group>"; };
+		A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers_feature.jpg; sourceTree = "<group>"; };
+		A2C9199724A4789500860D78 /* stmarylake_feature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake_feature.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +144,10 @@
 				A20E0FF324A386A10029D429 /* Lunch_PlacesApp.swift */,
 				A2C9198624A3DAE400860D78 /* LunchPlaces */,
 				A20E0FF524A386A20029D429 /* Assets.xcassets */,
+				A2C9199324A4787700860D78 /* Resources */,
 				A219CE0224A3D36900A10F98 /* Model */,
 				A219CE0C24A3D4EE00A10F98 /* Navigation */,
+				A2C9199024A4782F00860D78 /* ImageStore.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -147,6 +168,7 @@
 			children = (
 				A219CE0924A3D40000A10F98 /* AppTabNavigation.swift */,
 				A20E0FFD24A386A20029D429 /* Info.plist */,
+				A2C9198A24A3F8C800860D78 /* VisualEffectBlur.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -156,6 +178,7 @@
 			children = (
 				A20E100424A386A20029D429 /* Info.plist */,
 				A20E100524A386A20029D429 /* macOS.entitlements */,
+				A2C9198D24A3F8F500860D78 /* VisualEffectBlur.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -199,12 +222,23 @@
 		A2C9198624A3DAE400860D78 /* LunchPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				A219CDFF24A3D2C100A10F98 /* LunchPlaces.swift */,
+				A219CDFF24A3D2C100A10F98 /* LunchPlacesList.swift */,
 				A20E103024A38D600029D429 /* LunchPlaceDetail.swift */,
 				A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */,
-				A2C9198724A3E37B00860D78 /* LunchPlacesList.swift */,
+				A2C9198724A3E37B00860D78 /* LunchPlaceRow.swift */,
 			);
 			path = LunchPlaces;
+			sourceTree = "<group>";
+		};
+		A2C9199324A4787700860D78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2C9199624A4789500860D78 /* charleyrivers_feature.jpg */,
+				A2C9199424A4789500860D78 /* chilkoottrail.jpg */,
+				A2C9199724A4789500860D78 /* stmarylake_feature.jpg */,
+				A2C9199524A4789500860D78 /* turtlerock_feature.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +366,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20E102024A386A20029D429 /* Assets.xcassets in Resources */,
+				A2C9199824A4789500860D78 /* chilkoottrail.jpg in Resources */,
+				A2C9199C24A4789500860D78 /* charleyrivers_feature.jpg in Resources */,
+				A2C9199E24A4789500860D78 /* stmarylake_feature.jpg in Resources */,
+				A2C9199A24A4789500860D78 /* turtlerock_feature.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +378,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20E102124A386A20029D429 /* Assets.xcassets in Resources */,
+				A2C9199924A4789500860D78 /* chilkoottrail.jpg in Resources */,
+				A2C9199D24A4789500860D78 /* charleyrivers_feature.jpg in Resources */,
+				A2C9199F24A4789500860D78 /* stmarylake_feature.jpg in Resources */,
+				A2C9199B24A4789500860D78 /* turtlerock_feature.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,14 +408,16 @@
 			files = (
 				A2C9198424A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */,
 				A219CE0724A3D3C900A10F98 /* AppSidebarNavigation.swift in Sources */,
+				A2C9198B24A3F8C800860D78 /* VisualEffectBlur.swift in Sources */,
 				A219CE0A24A3D40000A10F98 /* AppTabNavigation.swift in Sources */,
-				A219CE0024A3D2C100A10F98 /* LunchPlaces.swift in Sources */,
+				A219CE0024A3D2C100A10F98 /* LunchPlacesList.swift in Sources */,
 				A20E103424A39C410029D429 /* LunchPlaceStore.swift in Sources */,
 				A20E103724A39C7D0029D429 /* LunchPlace.swift in Sources */,
 				A20E103124A38D600029D429 /* LunchPlaceDetail.swift in Sources */,
 				A20E101E24A386A20029D429 /* ContentView.swift in Sources */,
-				A2C9198824A3E37B00860D78 /* LunchPlacesList.swift in Sources */,
+				A2C9198824A3E37B00860D78 /* LunchPlaceRow.swift in Sources */,
 				A20E101C24A386A20029D429 /* Lunch_PlacesApp.swift in Sources */,
+				A2C9199124A4782F00860D78 /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,14 +427,16 @@
 			files = (
 				A2C9198524A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */,
 				A219CE0824A3D3C900A10F98 /* AppSidebarNavigation.swift in Sources */,
+				A2C9198F24A3F8F500860D78 /* VisualEffectBlur.swift in Sources */,
 				A219CE0B24A3D40000A10F98 /* AppTabNavigation.swift in Sources */,
-				A219CE0124A3D2C100A10F98 /* LunchPlaces.swift in Sources */,
+				A219CE0124A3D2C100A10F98 /* LunchPlacesList.swift in Sources */,
 				A20E103524A39C410029D429 /* LunchPlaceStore.swift in Sources */,
 				A20E103824A39C7D0029D429 /* LunchPlace.swift in Sources */,
 				A20E103224A38D600029D429 /* LunchPlaceDetail.swift in Sources */,
 				A20E101F24A386A20029D429 /* ContentView.swift in Sources */,
-				A2C9198924A3E37B00860D78 /* LunchPlacesList.swift in Sources */,
+				A2C9198924A3E37B00860D78 /* LunchPlaceRow.swift in Sources */,
 				A20E101D24A386A20029D429 /* Lunch_PlacesApp.swift in Sources */,
+				A2C9199224A4782F00860D78 /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

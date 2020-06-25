@@ -7,34 +7,49 @@
 
 import SwiftUI
 
-struct FavoriteLunchPlaces: View {
+struct FavoriteLunchPlacesList: View {
     @EnvironmentObject var store: LunchPlaceStore
+    @State private var selection: LunchPlace?
     
-    private var favoriteLunchPlaces: [LunchPlace] {
-        store.lunchPlaces.filter { $0.isFavorite }
+    @ViewBuilder var body: some View {
+        #if os(iOS)
+        content
+        #else
+        content
+            .frame(minWidth: 270, idealWidth: 300, maxWidth: 400, maxHeight: .infinity)
+            .toolbar { Spacer() }
+        #endif
     }
     
-    var body: some View {
-        List() {
-            ForEach(favoriteLunchPlaces) { lunchPlace in
-                LunchCellView(lunchPlace: lunchPlace)
+    var content: some View {
+        List(selection: $selection) {
+            ForEach(store.favoriteLunchPlaces) { lunchPlace in
+                NavigationLink(destination: LunchPlaceDetail(lunchPlace: lunchPlace), tag: lunchPlace, selection: $selection) {
+                    LunchPlaceRow(lunchPlace: lunchPlace)
+                }
+                .tag(lunchPlace)
+                // ToDo: add onReceive
             }
             
-            if !favoriteLunchPlaces.isEmpty {
+            if !store.favoriteLunchPlaces.isEmpty {
                 HStack {
                     Spacer()
-                    Text("\(favoriteLunchPlaces.count) Favorite\(store.lunchPlaces.count > 1 ? "s" : "")")
+                    Text("\(store.favoriteLunchPlaces.count) Favorite\(store.lunchPlaces.count > 1 ? "s" : "")")
                         .foregroundColor(.secondary)
                     Spacer()
                 }
             }
         }
-            .navigationTitle("Favorite Places")
+        .navigationTitle("Favorite Places")
     }
 }
 
 struct Favorites_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteLunchPlaces()
+        FavoriteLunchPlacesList()
     }
 }
+
+
+
+

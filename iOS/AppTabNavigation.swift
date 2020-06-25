@@ -14,7 +14,7 @@ struct AppTabNavigation: View {
     var body: some View {
         TabView(selection: $selection) {
             NavigationView {
-                LunchPlaces()
+                LunchPlacesList()
             }
             .tabItem {
                 Label("Places", systemImage: "list.bullet")
@@ -22,7 +22,7 @@ struct AppTabNavigation: View {
             .tag(Tab.menu)
             
             NavigationView {
-                FavoriteLunchPlaces()
+                FavoriteLunchPlacesList()
             }
             .tabItem {
                 Label("Favorites", systemImage: "heart.fill")
@@ -35,7 +35,7 @@ struct AppTabNavigation: View {
             .tabItem {
                 Label("Today", systemImage: "capsule.fill")
             }
-            .tag(Tab.rewards)
+            .tag(Tab.today)
             
             NavigationView {
                 Text("Profile")
@@ -43,7 +43,7 @@ struct AppTabNavigation: View {
             .tabItem {
                 Label("Profile", systemImage: "person.crop.circle.fill")
             }
-            .tag(Tab.recipes)
+            .tag(Tab.profile)
         }
     }
 }
@@ -54,8 +54,8 @@ extension AppTabNavigation {
     enum Tab {
         case menu
         case favorites
-        case rewards
-        case recipes
+        case today
+        case profile
     }
 }
 

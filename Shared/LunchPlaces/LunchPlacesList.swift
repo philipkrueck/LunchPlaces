@@ -7,44 +7,27 @@
 
 import SwiftUI
 
-struct LunchCellView: View {
-    var lunchPlace: LunchPlace
-    
-    var body: some View {
-        NavigationLink(destination: LunchPlaceDetail(lunchPlace: lunchPlace)) {
-            Image(systemName: "pencil")
-                .resizable()
-                .frame(width: 50, height: 50)
-                .background(Color.purple)
-                .cornerRadius(8)
-            
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(lunchPlace.name)
-                        .font(.headline)
-                        .foregroundColor(.primary)
-                    Text("Distance to place")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
-                
-                Spacer()
-
-            }
-        }
-    }
-}
-
 struct LunchPlacesList: View {
-    @EnvironmentObject var store: LunchPlaceStore
-    var showingFavoritesOnly = false
+    @EnvironmentObject private var store: LunchPlaceStore
+    @State private var selection: LunchPlace?
     
-    var body: some View {
-        List() {
+    @ViewBuilder var body: some View {
+        #if os(iOS)
+        content
+        #else
+        content
+            .frame(minWidth: 270, idealWidth: 300, maxWidth: 400, maxHeight: .infinity)
+        #endif
+    }
+    
+    var content: some View {
+        List(selection: $selection) {
             ForEach(store.lunchPlaces) { lunchPlace in
-                if !showingFavoritesOnly || lunchPlace.isFavorite {
-                    LunchCellView(lunchPlace: lunchPlace)
+                NavigationLink(destination: LunchPlaceDetail(lunchPlace: lunchPlace), tag: lunchPlace, selection: $selection) {
+                    LunchPlaceRow(lunchPlace: lunchPlace)
                 }
+                .tag(lunchPlace)
+                // ToDo: add onReceive
             }
             .onMove(perform: moveLunchPlace)
             .onDelete(perform: deleteSandwiches)
@@ -57,6 +40,27 @@ struct LunchPlacesList: View {
                     Spacer()
                 }
             }
+        }
+        .navigationTitle("Lunch Places")
+        .toolbar {
+            #if os(iOS)
+            ToolbarItem(placement: .navigationBarLeading) {
+                EditButton()
+            }
+            #endif
+            
+            ToolbarItem(placement: .primaryAction) {
+                Button(action: addLunchPlace){
+                    Label("Add", systemImage: "plus")
+                        .labelStyle(IconOnlyLabelStyle())
+                }
+            }
+        }
+    }
+    
+    func addLunchPlace() {
+        withAnimation {
+            store.addLunchPlace(LunchPlace(name: "Grieche", isFavorite: true, coordinates: Coordinates(latitude: 10, longitude: 10), imageName: "turtlerock_feature", address: .testAddress))
         }
     }
     
@@ -73,8 +77,10 @@ struct LunchPlacesList: View {
     }
 }
 
-struct LunchPlaces_Previews: PreviewProvider {
+struct LunchPlacesList_Previews: PreviewProvider {
     static var previews: some View {
-        LunchPlacesList()
+        NavigationView {
+            LunchPlacesList()
+        }
     }
 }
