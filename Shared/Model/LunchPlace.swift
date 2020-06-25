@@ -42,7 +42,7 @@ extension LunchPlace {
     }
     
     var coordinateRegion: MKCoordinateRegion {
-        MKCoordinateRegion(center: locationCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+        MKCoordinateRegion(center: locationCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
     }
 }
 

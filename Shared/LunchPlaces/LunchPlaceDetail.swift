@@ -119,7 +119,9 @@ struct LunchPlaceDetail: View {
                 
                 HStack {
                     Spacer()
-                    Map(coordinateRegion: $region)
+                    Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, annotationItems: [lunchPlace], annotationContent: { _ in
+                        MapMarker(coordinate: lunchPlace.locationCoordinate)
+                    })
                         .frame(width: size.width - 20, height: 300) // ToDo: Maybe make this dynamic for MacOS || iPadOS
                         .cornerRadius(15)
                         .shadow(radius: 6)
