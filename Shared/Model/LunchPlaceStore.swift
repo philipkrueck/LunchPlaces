@@ -34,6 +34,11 @@ class LunchPlaceStore: ObservableObject {
     func lunchPlaceStore(for id: LunchPlace.ID) -> LunchPlace? {
         return lunchPlaces.first(where: { $0.id == id })
     }
+    
+    func distance(to lunchPlace: LunchPlace) -> String {
+        let time = Int.random(in: 5..<10)
+        return "\(time) minutes"
+    }
 }
 
 let testStore = LunchPlaceStore(lunchPlaces: testData)

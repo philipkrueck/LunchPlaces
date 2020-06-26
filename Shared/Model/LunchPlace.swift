@@ -73,9 +73,8 @@ let testData = [
     LunchPlace(name: "Subway", isFavorite: true, coordinates: Coordinates(latitude: 53.553330, longitude: 9.983250), imageName: "subway", address: subwayAddress),
     LunchPlace(name: "Dominos", isFavorite: false, coordinates: Coordinates(latitude: 53.555530, longitude: 9.983580), imageName: "dominos", address: dominosAddress),
     LunchPlace(name: "Stadtsalat", isFavorite: true, coordinates: Coordinates(latitude: 53.556910, longitude: 9.989160), imageName: "stadtsalat", address: stadtSalatAddress),
-    LunchPlace(name: "Dean & David", isFavorite: false, coordinates: Coordinates(latitude: 53.551819, longitude: 9.995330), imageName: "deananddavid", address: deanAndDavidAddress)
+    LunchPlace(name: "Dean & David", isFavorite: false, coordinates: Coordinates(latitude: 53.551819, longitude: 9.995330), imageName: "deananddavid", address: deanAndDavidAddress),
+    LunchPlace(name: "Edelcurry", isFavorite: false, coordinates: Coordinates(latitude: 53.552259, longitude: 9.986248), imageName: "edelcurry", address: edelCurryAddress)
 ]
-
-let edelCurry = LunchPlace(name: "Edelcurry", isFavorite: false, coordinates: Coordinates(latitude: 53.552259, longitude: 9.986248), imageName: "edelcurry", address: edelCurryAddress)
 
 

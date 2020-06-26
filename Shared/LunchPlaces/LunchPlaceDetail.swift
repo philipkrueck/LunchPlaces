@@ -90,12 +90,8 @@ struct LunchPlaceDetail: View {
                 }
                 Spacer()
                 
-                Button("Open in Maps") {
-                    let destination = MKMapItem(placemark: MKPlacemark(coordinate: lunchPlace.locationCoordinate))
-                    destination.name = lunchPlace.name
-                    destination.openInMaps()
-                }
-                
+                OpenMapButton(lunchPlace: lunchPlace)
+    
             }
             .padding(16)
             
@@ -109,7 +105,7 @@ struct LunchPlaceDetail: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: size.width)
-                .background(Color.green)
+                .background(Color.accentColor)
             
             VStack(alignment: .leading) {
                 Text("Map")

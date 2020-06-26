@@ -40,7 +40,7 @@ struct LunchPlaceSelectionMap: View {
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $region, interactionModes: .all, annotationItems: mapMarkers.indices) { index in
+            Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, annotationItems: mapMarkers.indices) { index in
                 mapMarkers[index]
             }
             VStack {
@@ -59,7 +59,7 @@ struct LunchPlaceSelectionMap: View {
                 if let selectedPlaceMark = selectedPlaceMark {
                     Button {
                         let coordinates = Coordinates(latitude: selectedPlaceMark.coordinate.latitude, longitude: selectedPlaceMark.coordinate.longitude)
-                        let lunchPlace = LunchPlace(name: selectedPlaceMark.name ?? "", isFavorite: false, coordinates: coordinates, imageName: "subway", address: subwayAddress)
+                        let lunchPlace = LunchPlace(name: selectedPlaceMark.name ?? "", isFavorite: false, coordinates: coordinates, imageName: "meal", address: subwayAddress)
                         withAnimation {
                             self.store.addLunchPlace(lunchPlace)
                         }

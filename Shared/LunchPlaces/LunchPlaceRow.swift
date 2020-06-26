@@ -9,6 +9,8 @@ import SwiftUI
 import MapKit
 
 struct LunchPlaceRow: View {
+    @EnvironmentObject private var store: LunchPlaceStore
+    
     var lunchPlace: LunchPlace
     
     var size: CGFloat {
@@ -49,13 +51,14 @@ struct LunchPlaceRow: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: size, height: size)
+                .background(Color.accentColor)
                 .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
             
             VStack(alignment: .leading) {
                 Text(lunchPlace.name)
                     .font(.headline)
                     .lineLimit(1)
-                Text("Distance to place")
+                Text("\(store.distance(to: lunchPlace))")
                     .lineLimit(1)
                     .font(.subheadline)
                     .foregroundColor(.secondary)

@@ -72,7 +72,6 @@
 		A299D44F24A5393C00BE7BB7 /* dominos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A299D44A24A5393C00BE7BB7 /* dominos.jpg */; };
 		A299D45124A53E7B00BE7BB7 /* LunchPlaceSelectionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299D45024A53E7B00BE7BB7 /* LunchPlaceSelectionMap.swift */; };
 		A299D45224A53E7B00BE7BB7 /* LunchPlaceSelectionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299D45024A53E7B00BE7BB7 /* LunchPlaceSelectionMap.swift */; };
-		A299D45324A53E7B00BE7BB7 /* LunchPlaceSelectionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299D45024A53E7B00BE7BB7 /* LunchPlaceSelectionMap.swift */; };
 		A2C9198424A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
 		A2C9198524A3D91100860D78 /* FavoriteLunchPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198324A3D91100860D78 /* FavoriteLunchPlaces.swift */; };
 		A2C9198824A3E37B00860D78 /* LunchPlaceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198724A3E37B00860D78 /* LunchPlaceRow.swift */; };
@@ -81,6 +80,11 @@
 		A2C9198F24A3F8F500860D78 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9198D24A3F8F500860D78 /* VisualEffectBlur.swift */; };
 		A2C9199124A4782F00860D78 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9199024A4782F00860D78 /* ImageStore.swift */; };
 		A2C9199224A4782F00860D78 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9199024A4782F00860D78 /* ImageStore.swift */; };
+		A2F80ACE24A5F8F10031773F /* meal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2F80ACD24A5F8F10031773F /* meal.jpg */; };
+		A2F80ACF24A5F8F10031773F /* meal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2F80ACD24A5F8F10031773F /* meal.jpg */; };
+		A2F80AD024A5F8F10031773F /* meal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2F80ACD24A5F8F10031773F /* meal.jpg */; };
+		A2F80AD124A5F8F10031773F /* meal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2F80ACD24A5F8F10031773F /* meal.jpg */; };
+		A2F80AD224A5F8F10031773F /* meal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2F80ACD24A5F8F10031773F /* meal.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +176,7 @@
 		A2C9198A24A3F8C800860D78 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		A2C9198D24A3F8F500860D78 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		A2C9199024A4782F00860D78 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		A2F80ACD24A5F8F10031773F /* meal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meal.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +351,7 @@
 		A2C9199324A4787700860D78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A2F80ACD24A5F8F10031773F /* meal.jpg */,
 				A299D3F224A5275500BE7BB7 /* deananddavid.jpg */,
 				A299D44424A538B700BE7BB7 /* subway.jpg */,
 				A299D3F624A527B200BE7BB7 /* edelcurry.jpg */,
@@ -498,6 +504,7 @@
 			files = (
 				A299D3FD24A5286200BE7BB7 /* edelcurry.jpg in Resources */,
 				A20E102024A386A20029D429 /* Assets.xcassets in Resources */,
+				A2F80ACE24A5F8F10031773F /* meal.jpg in Resources */,
 				A299D41B24A52B1200BE7BB7 /* stadtsalat.jpg in Resources */,
 				A299D3FB24A5286200BE7BB7 /* deananddavid.jpg in Resources */,
 				A299D44524A538B700BE7BB7 /* subway.jpg in Resources */,
@@ -511,6 +518,7 @@
 			files = (
 				A299D40124A5286300BE7BB7 /* edelcurry.jpg in Resources */,
 				A20E102124A386A20029D429 /* Assets.xcassets in Resources */,
+				A2F80ACF24A5F8F10031773F /* meal.jpg in Resources */,
 				A299D41C24A52B1200BE7BB7 /* stadtsalat.jpg in Resources */,
 				A299D3FF24A5286300BE7BB7 /* deananddavid.jpg in Resources */,
 				A299D44624A538B700BE7BB7 /* subway.jpg in Resources */,
@@ -526,6 +534,7 @@
 				A299D43524A537D900BE7BB7 /* deananddavid.jpg in Resources */,
 				A299D43124A537D900BE7BB7 /* stadtsalat.jpg in Resources */,
 				A299D44D24A5393C00BE7BB7 /* dominos.jpg in Resources */,
+				A2F80AD024A5F8F10031773F /* meal.jpg in Resources */,
 				A299D43324A537D900BE7BB7 /* edelcurry.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +545,7 @@
 			files = (
 				A299D3B524A505A600BE7BB7 /* Assets.xcassets in Resources */,
 				A299D42B24A537A200BE7BB7 /* stadtsalat.jpg in Resources */,
+				A2F80AD124A5F8F10031773F /* meal.jpg in Resources */,
 				A299D42924A537A200BE7BB7 /* deananddavid.jpg in Resources */,
 				A299D44824A538B700BE7BB7 /* subway.jpg in Resources */,
 				A299D42724A537A200BE7BB7 /* edelcurry.jpg in Resources */,
@@ -551,6 +561,7 @@
 				A299D40524A5286300BE7BB7 /* edelcurry.jpg in Resources */,
 				A299D41D24A52B1200BE7BB7 /* stadtsalat.jpg in Resources */,
 				A299D44F24A5393C00BE7BB7 /* dominos.jpg in Resources */,
+				A2F80AD224A5F8F10031773F /* meal.jpg in Resources */,
 				A299D44924A538B700BE7BB7 /* subway.jpg in Resources */,
 				A299D3CC24A505A700BE7BB7 /* Preview Assets.xcassets in Resources */,
 				A299D3DD24A506FB00BE7BB7 /* Assets.xcassets in Resources */,
@@ -611,7 +622,6 @@
 			files = (
 				A299D3C524A505A700BE7BB7 /* NotificationController.swift in Sources */,
 				A299D3C324A505A700BE7BB7 /* ContentView.swift in Sources */,
-				A299D45324A53E7B00BE7BB7 /* LunchPlaceSelectionMap.swift in Sources */,
 				A299D3DF24A518F600BE7BB7 /* WatchLunchPlacesList.swift in Sources */,
 				A299D3C124A505A700BE7BB7 /* Lunch_PlacesApp.swift in Sources */,
 				A299D42124A5378500BE7BB7 /* OpenMapButton.swift in Sources */,

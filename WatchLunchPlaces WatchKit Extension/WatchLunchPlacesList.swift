@@ -25,7 +25,7 @@ struct WatchLunchPlacesList: View {
                             Text(lunchPlace.name)
                                 .font(.headline)
                                 .lineLimit(1)
-                            Text("5 min")
+                            Text("\(store.distance(to: lunchPlace))")
                                 .lineLimit(1)
                                 .font(.caption2)
                                 .foregroundColor(.secondary)

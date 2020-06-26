@@ -46,12 +46,6 @@ struct LunchPlacesList: View {
         }
         .navigationTitle("Lunch Places")
         .toolbar {
-            #if os(iOS)
-            ToolbarItem(placement: .navigationBarLeading) {
-                EditButton()
-            }
-            #endif
-            
             ToolbarItem(placement: .primaryAction) {
                 Button(action: {
                         isShowingMapSheet.toggle()
@@ -60,12 +54,6 @@ struct LunchPlacesList: View {
                         .labelStyle(IconOnlyLabelStyle())
                 }
             }
-        }
-    }
-    
-    func addLunchPlace() {
-        withAnimation {
-            store.addLunchPlace(edelCurry)
         }
     }
     
